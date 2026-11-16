@@ -1,0 +1,16 @@
+name: M2
+on:
+  workflow_dispatch:
+jobs:
+  a:
+    runs-on: macos-13
+    steps:
+      - run: sw_vers
+  b:
+    runs-on: macos-latest
+    steps:
+      - run: sw_vers
+  c:
+    runs-on: macos-15
+    steps:
+      - run: sw_vers
